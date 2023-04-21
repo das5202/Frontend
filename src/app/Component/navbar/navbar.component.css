@@ -1,0 +1,24 @@
+.navbar-light .navbar-nav .nav-link
+{
+    color: black;
+    
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+    
+}
+.nav-link ul li:hover::after{
+    width:100%;
+    
+}
+
+.btn{
+    color: black;
+
+}
+
+.btn:hover::after{
+    color: #f44336;
+}

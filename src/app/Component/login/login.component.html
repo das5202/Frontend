@@ -1,0 +1,40 @@
+
+
+
+
+ <section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form [formGroup]="LoginForm" (ngSubmit)="onSubmit()"> 
+                    <div class="form-group">
+                        <div *ngIf="EmailId?.touched && EmailId?.invalid">
+                            <span>*Email is invalid.</span></div>
+                        <input type="EmailId" id="EmailId" class="form-control form-control-lg" placeholder="Enter a valid email address" formControlName="EmailId" ng-required="required" />
+                        <label class="form-label" for="form3Example3"></label>
+                    </div>
+                    <div class="form-group ">
+                        <div *ngIf="Password?.touched && Password?.invalid">
+                            <span>*Password is required.</span></div>
+                        <input formControlName="Password" type="Password" id="Password" class="form-control form-control-lg" placeholder="Enter password" ng-required="required" />
+                        <label class="form-label" for="form3Example4"></label>
+
+                        <label class="form-label" for="form3Example3"></label>
+
+                    </div> 
+                    
+                    <div class="text-center text-lg mt-4 pt-2">
+                        <button type="button" class="btn" type="submit" [disabled]="!LoginForm.valid" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a routerLink="/sign-up" class="link-danger"> Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+
+</section> -->
+
+

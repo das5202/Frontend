@@ -1,0 +1,29 @@
+/*-----TopCategories--------*/
+.TopCategories{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.TopCategoriesDiv{
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.card{
+    border-radius: 5px;
+    
+}
+
+.card h4{
+    color: #088178;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.choose{
+    margin-top: 60px;
+}
+

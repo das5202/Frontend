@@ -1,0 +1,41 @@
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #808080;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:20px ; color: white;">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            </li>
+             </ul>
+        <div class="container">
+        <form class="d-flex">
+          <input class="form-control me-2 de" #searchInput type="search" placeholder="Search products "aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" (click)="search(searchInput)">Search</button>
+        </form>
+    </div>
+
+
+    &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+
+    
+          <button class="btn btn-sm btn-outline-primary" routerLink="login">login</button>
+
+
+    &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+
+   
+
+    <button class="btn btn-sm btn-outline-danger" (click)="onLogout()">Logout</button>
+    
+      </div>
+    </div>
+  </nav>
